@@ -2,15 +2,39 @@ body{
 background-image: linear-gradient(to right, red , yellow);
 }
 
+#cubeobject {
+  position: absolute;
+  right:400px;
+  top: 548px;
+  height: 150px;
+  width: 150px;
+  background: #696969;
+  animation-name: sidetoside;
+  animation-duration: 3s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sidetoside{
+  0% {right:548px;}
+  5% {right:30px;}
+  30% {right:30px;}
+  35% {right:150px;}
+  60% {right:150px;}
+  65% {right:548px;}
+  100% {right:548px;}
+}
+
 #face{
   position: relative;
   margin: 0 auto;
+  right:150px;
   top: 55px;
   height: 100px;
   width: 100px;
   background: #000;
-  animation-play-state: paused;
 }
+
 
 #lefteye {
   position: absolute;
@@ -74,7 +98,7 @@ background-image: linear-gradient(to right, red , yellow);
   right:9px;
   height:230px;
   width: 17px;
-  background: #181818;
+  background:linear-gradient(#282828, #202020, #cc00cc);
 }
 
 #arm{
@@ -83,7 +107,7 @@ background-image: linear-gradient(to right, red , yellow);
   left: 103px;
   height:230px;
   width: 17px;
-  background: #181818;
+  background:linear-gradient(#282828, #202020, #cc00cc);
 }
 
 #leftleg{
