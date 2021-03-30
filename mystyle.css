@@ -1,0 +1,64 @@
+body {
+  background: #92a8d1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#face{
+  position: relative;
+  margin: 0 auto;
+  top: 75px;
+  height: 150px;
+  width: 150px;
+  background: #000;
+  animation-play-state: paused;
+}
+
+#eye {
+  position: absolute;
+  left: 5px;
+  top: 60px;
+  width: 45px;
+  height: 20px;
+  background: #cc00cc;
+  animation-name: look-around;
+  animation-duration: 3s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
+@keyframes look-around{
+  0% {left:5px;}
+  5% {left:30px;}
+  30% {left:30px;}
+  35% {left:60px;}
+  60% {left:45px;}
+  65% {left:5px;}
+  100% {left:5px;}
+}
+
+#eye2 {
+  position: absolute;
+  left: 95px;
+  top: .3px;
+  width: 45px;
+  height: 20px;
+  background: #cc00cc;
+  animation-name: look-about;
+  animation-duration: 3s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
+@keyframes look-about{
+  0% {left:95px;}
+  5% {left:30px;}
+  30% {left:30px;}
+  35% {left:.3px;}
+  60% {left:45px;}
+  65% {left:95px;}
+  100% {left:95px;}
+}
