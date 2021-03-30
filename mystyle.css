@@ -62,3 +62,21 @@ body {
   65% {left:95px;}
   100% {left:95px;}
 }
+
+#middlebody{
+  position: relative;
+  margin: 0 auto;
+  top: 70px;
+  height: 155px;
+  width: 200px;
+  background: #000;
+}
+
+#arm1{
+  position: relative;
+  left: 200px;
+  top: .1;
+  height:22px;
+  width: 300px;
+  background: #101010;
+}
